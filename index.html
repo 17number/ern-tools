@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ELDEN RING NIGHTREIGN ツール集</title>
+  <meta name="description" content="ELDEN RING NIGHTREIGN 向けの便利ツール集 — 遺物画像結合、キャラクター＆ボスルーレット、遺物組み合わせ探索ツールへのリンクページ" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Simple, self-contained styling so this file works on GitHub Pages without external deps -->
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f172a; --accent:#8b5cf6; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --radius:12px; --maxw:880px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(139,92,246,0.06), transparent),
+                  linear-gradient(180deg, #071025 0%, #07172a 100%);
+      color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex; align-items:center; justify-content:center; padding:48px 20px;
+    }
+
+    .container{width:100%; max-width:var(--maxw);}
+    header{display:flex; align-items:center; gap:16px; margin-bottom:28px}
+    .logo{
+      width:64px; height:64px; border-radius:14px; background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:white; font-size:18px;
+      box-shadow:0 6px 18px rgba(11,17,34,0.6), inset 0 -6px 18px rgba(255,255,255,0.02);
+    }
+    h1{font-size:20px; margin:0}
+    p.lead{margin:4px 0 0; color:var(--muted); font-size:13px}
+
+    .grid{display:grid; grid-template-columns:1fr; gap:14px;}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04); padding:18px; border-radius:var(--radius);
+      backdrop-filter: blur(6px); box-shadow: 0 6px 22px rgba(2,6,23,0.6);
+      display:flex; flex-direction:column; gap:10px; min-height:120px;
+    }
+    .card h3{margin:0; font-size:15px}
+    .card p{margin:0; color:var(--muted); font-size:13px}
+    .card .actions{margin-top:auto; display:flex; gap:8px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:600;
+      border:1px solid rgba(255,255,255,0.04); background:var(--glass); color:inherit; font-size:13px
+    }
+    .btn.external::after{content:'↗'; font-size:11px; opacity:0.85}
+
+    footer{margin-top:22px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; align-items:center}
+    .credits{opacity:0.85}
+
+    /* small flourish */
+    .badge{font-size:11px; padding:6px 8px; border-radius:999px; background:rgba(255,255,255,0.03); color:var(--muted); border:1px solid rgba(255,255,255,0.02)}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🔧</div>
+      <div>
+        <h1>ELDEN RING NIGHTREIGN — ツール集</h1>
+        <p class="lead">ビルド画像作成、キャラ/ボス ルーレット、シミュレーション</p>
+      </div>
+    </header>
+
+    <main class="grid" role="main">
+      <article class="card" aria-labelledby="t1">
+        <div>
+          <h3 id="t1">遺物画像結合ツール</h3>
+          <p>遺物 (1〜3枠)・深き夜の深層遺物 (4〜6枠) の効果画像を1枚にまとめまるツール</p>
+        </div>
+        <div class="actions">
+          <a class="btn external" href="https://17number.github.io/enr-relics-merger/" target="_blank" rel="noopener noreferrer">開く</a>
+        </div>
+      </article>
+
+      <article class="card" aria-labelledby="t2">
+        <div>
+          <h3 id="t2">キャラクター＆ボス ルーレット</h3>
+          <p>キャラクター/ボス をランダムに選ぶルーレット</p>
+        </div>
+        <div class="actions">
+          <a class="btn external" href="https://17number.github.io/ern-character-boss-roulette/" target="_blank" rel="noopener noreferrer">開く</a>
+        </div>
+      </article>
+
+      <article class="card" aria-labelledby="t3">
+        <div>
+          <h3 id="t3">遺物組み合わせ(ビルド)探索ツール</h3>
+          <p>遺物の管理とビルドのシミュレーション用ツール</p>
+        </div>
+        <div class="actions">
+          <a class="btn external" href="https://17number.github.io/enr-relics-simulator/" target="_blank" rel="noopener noreferrer">開く</a>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="badge">ELDEN RING NIGHTREIGN</div>
+    </footer>
+  </div>
+</body>
+</html>
